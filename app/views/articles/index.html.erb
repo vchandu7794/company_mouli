@@ -1,0 +1,31 @@
+<h1>EDMS</h1>
+<%= link_to 'New User', new_article_path %>
+<center>
+  <table border= border>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Email</th>
+
+      <th colspan="3"></th>
+    </tr>
+
+    <% @articles.each do |article| %>
+        <tr>
+          <td><%= article.name %></td>
+          <td><%= article.description %></td>
+          <td><%= article.email %></td>
+          <td><%= link_to 'Show', article_path(article) %></td>
+          <td><%= link_to 'Edit', edit_article_path(article) %></td>
+          <td><%= link_to 'Destroy', article_path(article),
+                          method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+        </center>
+    <% end %>  
+    </table>
+    <%= form_tag login_logout_path, :method => 'get' do %>
+
+    <p>
+        <%= submit_tag 'Sign Out' %>
+      </p>
+      <%end%>

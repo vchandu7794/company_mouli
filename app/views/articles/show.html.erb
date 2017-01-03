@@ -1,0 +1,27 @@
+<h2>Employee Details</h2>
+<p>
+<strong>Name</strong>
+<%= @article.name %>
+</p>
+
+<p>
+<strong>Description</strong>
+<%= @article.description %>
+</p>
+
+<p>
+<strong>Email</strong>
+<%= @article.email%>
+</p>
+
+<p>
+<strong>password</strong>
+<%= @article.password%>
+</p>
+<%= link_to 'View All Profiles', articles_path %>	
+<%= form_tag login_logout_path, :method => 'get' do %>
+
+    <p>
+        <%= submit_tag 'Sign Out' %>
+      </p>
+      <%end%>

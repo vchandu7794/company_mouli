@@ -1,0 +1,30 @@
+
+  <div class="header">
+      <%= image_tag("login.png") %>  
+      </div>
+  <div class="index">
+    <h3>LOGIN IN</h3>
+  
+   
+  <%= form_tag employees_new_path, :method => 'get' do %>
+      <p>
+        Email<br>
+        <%= text_field_tag "email",nil %>
+      </p>
+
+      <p>
+        Password<br>
+        <%= text_field_tag "password", nil,:type=> 'password' %>
+      </p>
+ 
+      <p>
+        <%= submit_tag 'Sign in' %>
+      </p>
+    <% end %> 
+ 
+
+<div class= "index-footer">
+<p4><%= link_to 'create new account', :controller => "articles", :action => "new" %></p4>
+</div>
+</div>
+

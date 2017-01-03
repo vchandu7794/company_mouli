@@ -1,0 +1,67 @@
+.background {
+    background-color: aquamarine;
+  
+    text-align: center;
+}
+
+.table {
+	text-align: center;
+}
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ 
+ .header{
+ 	background-color: white;
+ 	float:left;
+ }
+.index {
+	margin-right: 30%;
+	margin-left: 30%;
+	padding: 30px;
+	float: left;
+	width: 30%;
+	border: 3px groove #2789B8;
+	background-color: #f8ffff;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-radius: 15px;
+	margin-top: 100px;
+}
+.index p {
+	text-align:center;
+	margin: 10px;
+	padding: 10px;
+}
+
+.index p1 {
+float:left;
+margin-top: 22px;
+}
+
+.index p2{
+	margin-left: 27px;
+}
+
+p3 {
+	float:right;
+}
+
+
+.index-footer {
+	background-color: lightgreen;
+}
